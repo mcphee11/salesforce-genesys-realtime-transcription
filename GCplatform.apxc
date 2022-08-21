@@ -1,0 +1,8 @@
+public with sharing class GCplatform{
+    @AuraEnabled
+    public static List<List<SObject>> getArticlesList(String searchVar){
+        List<List<SObject>> articles = [FIND :searchVar RETURNING KnowledgeArticleVersion
+            (KnowledgeArticleId, Id, Title WHERE PublishStatus='Online' AND Language = 'en_US')];
+        return articles;
+    }    
+}

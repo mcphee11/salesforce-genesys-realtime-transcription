@@ -1,0 +1,13 @@
+.THIS .card-customer {
+    color: black;
+    background-color: #faebd7;
+    white-space: normal;
+}
+.THIS .card-internal {
+    color: black;
+    background-color: #f0f8ff;
+    white-space: normal;
+}
+.THIS .slds-truncate {
+    white-space: normal;
+}
