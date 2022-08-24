@@ -83,7 +83,7 @@
                     for (const word of words.words) {
                         console.log("word: ", word.word)
                         console.log("confidence: ", word.confidence)
-                        if (.8 < word.confidence) {
+                        if (.8 < word.confidence) { //Confidence required .8 is 80% of accuracy required
                             text = text + " " + word.word
                         }
                     }
